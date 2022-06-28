@@ -1,4 +1,5 @@
 let listaTarefas = [];
+let listaBkp;
 
 function adicionar() {
     let nomeTarefa = document.getElementById("tarefa").value;
@@ -18,19 +19,20 @@ function imprimir() {
     sectionTarefa.innerHTML = "";
 
     for (let i = 0; i< listaTarefas.length; i++) {
-        cacheSection = cacheSection + `<tr><td>${listaTarefas[i]}</td></tr>`;
+        cacheSection = cacheSection + `<div>${listaTarefas[i]}</div>`;
     }
     sectionTarefa.innerHTML = cacheSection;
 }
 
+//não funciona
 function buscar() {
     let busca = document.getElementById("tarefa").value;
     listaBkp = buscaLista;
     buscaLista = listaTarefas.filter((elemento) => {
-        return elemento.toLowerCase().includes(busca.toLowerCase())
+        return elemento.includes(busca)
     })
-    document.getElementById("tarefa-adicionada").innerHTML = "";
     imprimir()
+    limpar()
 }
 
 function limpar() {
