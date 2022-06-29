@@ -28,9 +28,14 @@ let listaBkp;
 function buscar() {
     let busca = document.getElementById("tarefa").value;
     listaBkp = listaTarefas;
-    listaTarefas = listaTarefas.filter((elemento) => {
-        return elemento.toLowerCase().includes(busca.toLowerCase())
-    })
+    
+    if (busca != listaTarefas) {
+        alert("Palavra não encontrada na lista")
+    } else {
+        listaTarefas = listaTarefas.filter((elemento) => {
+            return elemento.toLowerCase().includes(busca.toLowerCase())
+        })
+    }
     imprimir()
     esvaziarCampo()
 }
