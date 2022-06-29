@@ -1,0 +1,62 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #fef6e4;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 80px;
+    text-transform: uppercase;
+    color: #001858;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #001858;
+}
+
+.card {
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: #001858;
+}
+
+.card2 {
+    text-align: center;
+}
+
+button {
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    background-color: #f582ae;
+    color: #001858;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #001858;
+    color: #f582ae;
+}
+
+input {
+    border: 2px solid;
+    padding: 10px 16px;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #001858;
+    background-color: transparent;
+}
+
+#tarefa-adicionada {
+    color: #8bd3dd;
+    margin: 20px 150px;
+    padding: 20px 50px;
+    font-size: 25px;
+}
